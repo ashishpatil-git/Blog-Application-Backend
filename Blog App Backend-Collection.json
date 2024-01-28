@@ -1,0 +1,216 @@
+{
+    "info": {
+        "_postman_id": "4b319dae-382f-4735-a200-60a6c6cd9730",
+        "name": "Blog App Backend",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "Delete by ID",
+            "request": {
+                "method": "DELETE",
+                "url": {
+                    "raw": "http://localhost:3001/api/blog/65b5b63b788ac00c22b9f8a1",
+                    "path": [
+                        "api",
+                        "blog",
+                        "65b5b63b788ac00c22b9f8a1"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3001"
+                }
+            }
+        },
+        {
+            "name": "Get Blog By Id",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:3001/api/blog/65b5b63b788ac00c22b9f8a1",
+                    "path": [
+                        "api",
+                        "blog",
+                        "65b5b63b788ac00c22b9f8a1"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3001"
+                }
+            }
+        },
+        {
+            "name": "Update Blog By ID",
+            "request": {
+                "method": "PUT",
+                "url": {
+                    "raw": "http://localhost:3001/api/blog/update/65b5b63b788ac00c22b9f8a1",
+                    "path": [
+                        "api",
+                        "blog",
+                        "update",
+                        "65b5b63b788ac00c22b9f8a1"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3001"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"title\": \"Test Blog1\",\n  \"description\": \"Test Description\"\n}"
+                }
+            }
+        },
+        {
+            "name": "Add new Blog",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:3001/api/blog/add",
+                    "path": [
+                        "api",
+                        "blog",
+                        "add"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3001"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"title\": \"Test Blog\",\n  \"description\": \"Test Desc\",\n  \"image\": \"abcd\",\n  \"user\": \"James\"\n}"
+                }
+            }
+        },
+        {
+            "name": "Get All Blogs",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:3001/api/blog",
+                    "path": [
+                        "api",
+                        "blog"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3001"
+                }
+            }
+        },
+        {
+            "name": "User Signup",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:3001/api/user/signup",
+                    "path": [
+                        "api",
+                        "user",
+                        "signup"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3001"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"name\": \"James\",\n  \"email\": \"james@mail.com\",\n  \"password\": \"testpass123\"\n}"
+                }
+            }
+        },
+        {
+            "name": "User Login",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:3001/api/user/login",
+                    "path": [
+                        "api",
+                        "user",
+                        "login"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3001"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"email\": \"james@mail.com\",\n  \"password\": \"testpass123\"\n}"
+                }
+            }
+        },
+        {
+            "name": "Get All Users",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:3001/api/user",
+                    "path": [
+                        "api",
+                        "user"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3001"
+                }
+            }
+        },
+        {
+            "name": "Get Blog by User ID",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:3001/api/user/65b698f0b3e6a5895c6d2071",
+                    "path": [
+                        "api",
+                        "user",
+                        "65b698f0b3e6a5895c6d2071"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3001"
+                }
+            }
+        }
+    ]
+}
